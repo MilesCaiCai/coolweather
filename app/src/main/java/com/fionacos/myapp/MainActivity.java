@@ -1,5 +1,6 @@
 package com.fionacos.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -18,10 +19,19 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate:success");
 
         Button bt1 = (Button) findViewById(R.id.button3);
+        Button bt2 = (Button) findViewById(R.id.button1);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this,"点啥呢？",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Weather.class);
+                startActivity(intent);
             }
         });
 

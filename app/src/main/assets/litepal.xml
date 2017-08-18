@@ -1,9 +1,11 @@
-<litrpal>
-    <dname value = "cool_weather" />
-    <version value = "1" />
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="cool_weather" />
+    <version value="1" />
     <list>
-        <mapping class = "com.fionacos.myapp.db.City"/>
-        <mapping class = "com.fionacos.myapp.db.County"/>
-        <mapping class = "com.fionacos.myapp.db.Province"/>
+        <mapping class="com.fionacos.myapp.db.Province" />
+        <mapping class="com.fionacos.myapp.db.City" />
+        <mapping class="com.fionacos.myapp.db.County" />
     </list>
-</litrpal>
+</litepal>
